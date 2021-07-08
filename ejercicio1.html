@@ -3,7 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta author="Sebastián Gómez Letelier">
     <title>Ejercicio 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,14 +26,14 @@
                             Nombre completo
                         </label>
                         <input id="nombre" type="text">
-                        <p class="errorNombre" style="color:red;font-style: italic;"></p>
+                        <p id="errorNombre" style="color:red; font-style: italic;"></p>
                     </div>
                     <div style="display: flex;flex-direction: column;">
                         <label>
                             Asunto
                         </label>
                         <input id="asunto" type="text">
-                        <p class="errorAsunto" style="color:red;font-style: italic;"></p>
+                        <p id="errorAsunto" style="color:red;font-style: italic;"></p>
                     </div>
                 </div>
                 <div style="display: flex;flex-direction: column;">
@@ -36,7 +41,7 @@
                         Mensaje
                     </label>
                     <textarea id="mensaje"></textarea>
-                    <p class="errorMensaje" style="color:red;font-style: italic;"></p>
+                    <p id="errorMensaje" style="color:red;font-style: italic;"></p>
                 </div>
                 <div>
                     <button id="botton" type="submit">
@@ -46,9 +51,7 @@
             </form>
         </div>
     </div>
-    <script>
-    // Escríbe aquí tu código
-    </script>
+    <script src="assets/js/ej1.js"> </script>
 </body>
 
 </html>
